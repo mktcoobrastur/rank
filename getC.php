@@ -6,16 +6,17 @@
 	while($res = mysqli_fetch_assoc($qryLista)){
 ?>
     <div class="campeao">
-        <img src="img/<?php echo $res['img']; ?>" class="img-circle" />
+        <img src="img/ft/<?php echo $res['img']; ?>" class="img-circle" />
         <span><?php echo utf8_encode($res['nome']); ?></span>
         <div class="Tvendas">
             <h3>TOTAL DE VENDAS</h3>
             <b><?php echo $res['qnt_vendas']; ?></b> 
         </div>
     </div>
+
         <?php
         $dados[] = array_map('utf8_encode', $res);
-        print_r($res);
+        //print_r($res);
         //$audio = $res['mp3'];
     }
 ?>
