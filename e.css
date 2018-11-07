@@ -23,6 +23,18 @@ body {
     margin-top: 30px;
 }
 
+.logoCobrastur {
+    position: absolute;
+    left: 350px;
+    top: 50px;    
+}
+
+/* LOGO COOBRASTUR */
+.logoCobrastur img {
+    width: 300px;
+}
+
+/* LISTAGEM */
 .outLista {
     margin-top: 50px;
     height: 600px;

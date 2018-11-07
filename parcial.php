@@ -20,6 +20,9 @@
             <button v-on:click="shuffle">Refresh</button>
             <!-- DADOS LISTAGEM ORDER BY qnt_vendas DESC -->
             <transition-group name="flip-list" tag="ul" id="lista">
+                <ul v-for="items as item">
+                    {{ items.nome.id }}
+                </ul>
             </transition-group>
              
             <!-- DADOS CAMPEÃO -->

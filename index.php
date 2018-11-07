@@ -18,6 +18,11 @@
     $totalVendas = $query[0];
     
 ?>
+
+<div class="logoCobrastur">
+    <img src="img/logo-coobrastur.png" />
+</div>
+
     <span class="progressMeta">
         <label>Progresso das Vendas</label>
         <div class="progress" style="width: 250px;">
