@@ -32,6 +32,6 @@ function lista(){
              $('#listaC').html(textStatus); //mostrando resultado do 1º colocado.
          }
      })
-     timerI = setTimeout("lista()", 6200); //tempo de espera (6200 P)
+     timerI = setTimeout("lista()", 6200); //tempo de espera (6200 Padrão)
             timerR = true;
 }

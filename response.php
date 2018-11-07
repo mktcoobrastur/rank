@@ -16,6 +16,8 @@
   transition: transform 1s;
 }
 </style>
+
+<?php  ?>
         <div class="outLista">
                 <!-- DADOS LISTAGEM ORDER BY qnt_vendas DESC -->
                 <div id="flip-list" class="demo">
@@ -43,7 +45,7 @@ new Vue({
   el: '#flip-list',
   data: {
     url: 'http://localhost/televenda/dados.json',
-    items: [1,2,3,4,5,6,7,8,9]
+    items: ['as',2,3,4,5,6,7,8,9]
   },
   methods: {
     shuffle: function () {

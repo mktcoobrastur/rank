@@ -56,23 +56,25 @@ body {
 
 #lista {
     display: block;
-    width: 1200px;
+    width: 1300px;
 }
 
 .linha {
     float: left;
-    width: 480px;
-    height: 45px;
+    width: 550px;
+    height: 60px;
     line-height: 45px;
     padding-left: 15px;
     margin-left: 10px;
-    margin-top: 1px;
+    margin-top: 0px;
     list-style-type: decimal;
     list-style-position: outside;
     background: #f0f0f0;
+    border: 1px solid #d9d9d9;
     font-family: 'Open Sans';
+    border-radius: 2px;
     color: #666;
-    opacity: 0.7;
+    opacity: 0.97;
     font-size: 15px;
     text-align: left;
     position: relative;
@@ -87,10 +89,11 @@ body {
 }
 
 .ftAtendente {
-    width: 40px;
-    border: 1px solid #cccccc;
+    width: 55px;
+    /*border: 1px solid #fff;*/
     margin-right: 10px;
     margin-left: 10px;
+    margin-top: 2px;
 }
 
 .nVendas { /* Número de Vendas */
@@ -130,6 +133,7 @@ body {
     line-height: 50px;
     text-align: center;
     color: #fff;
+    background: #154F75;
     font-size: 20px;
     bottom: 3px;
     left: 50px;
@@ -185,12 +189,29 @@ body {
 
   .nomeV {
     width: 400px;
-        }
-  /* ANIMATION TITLE RANKING COOBRASTUR */
-
-  .rankingTitulo {
-    opacity: 1; /* EMBED TRANSITION */
+}
+ 
+  /***** Transitions Ranking *****/
+  .rankingTitulo { transition: 0.7s infinite; }
+  .rankingTitulo:hover { transition: 0.7s infinite; }
+  @keyframes bounce {
+    from {
+      transform: translateY(15px);
+    }
+    to {
+      transform: translateY(0px);
+    }
   }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(15px);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }
+  /***** Fim Transitions Ranking *****/
+
 
   /****** PLAYER ******/
 

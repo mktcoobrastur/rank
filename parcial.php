@@ -33,7 +33,7 @@
     </div>
 
 <?php
-    $json           = file_get_contents('dados.json');
+    $json           = file_get_contents('https://localhost/televenda/dados.json');
     $jsonDecode     = (json_decode($json, true));
 ?>
 
