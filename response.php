@@ -50,6 +50,7 @@ new Vue({
             'Pessoa 2',
             'Pessoa 3',
             'Pessoa 4',
+            'Pessoa 3',
             'Pessoa 5',
             'Pessoa 6',
             'Pessoa 7',

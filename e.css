@@ -49,6 +49,7 @@ body {
     opacity: 0.8;
     font-size: 15px;
     text-align: left;
+    position: relative;
     /*-webkit-animation: bounceIn 2s;*/
 }
 
@@ -190,6 +191,21 @@ body {
     font-size: 25px;
   }
 
+  .progressMeta {
+      position: absolute;
+      left: 50px;
+      top: 50px;
+  }
+
+  .progressMeta h4 {
+      font-size: 25px !important;
+      font-weight: bold;
+      font-family: 'Open Sans';
+  }
+
+  .nomeV {
+    width: 400px;
+        }
   /* ANIMATION TITLE RANKING COOBRASTUR */
 
   .rankingTitulo {
