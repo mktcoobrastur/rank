@@ -15,29 +15,38 @@ body {
     bottom: 0;
 }
 .auto {
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
-    /*border: 1px solid #ccc;*/
+    height: 600px;
 }
 .topo {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .outLista {
-    margin-top: 20px;
+    margin-top: 50px;
+    height: 600px;
+}
+
+#lista {
+    display: block;
+    width: 1200px;
 }
 
 .linha {
-    width: 550px;
+    float: left;
+    width: 480px;
     height: 45px;
     line-height: 45px;
     padding-left: 15px;
-    margin: 1px;
+    margin-left: 10px;
+    margin-top: 1px;
     list-style-type: decimal;
     list-style-position: outside;
     background: #f0f0f0;
     font-family: 'Open Sans';
     color: #666;
+    opacity: 0.8;
     font-size: 15px;
     text-align: left;
     /*-webkit-animation: bounceIn 2s;*/
@@ -72,7 +81,7 @@ body {
 .campeao {
     position: absolute;
     right: 150px;
-    top: 100px;
+    top: 70px;
     width: 400px;
     height: 279px;
     background-image: url(img/1o.png);

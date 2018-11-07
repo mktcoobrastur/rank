@@ -14,9 +14,10 @@
     <div class="topo"></div>
         <img width="300" class="rankingTitulo" src="img/ranking-coobrastur.png" alt="Coobrastur" />
     </div>
-    <div class="auto">
-        <div class="outLista">
 
+    <div class="auto">
+        <div class="outLista" id="flip-list">
+            <button v-on:click="shuffle">Refresh</button>
             <!-- DADOS LISTAGEM ORDER BY qnt_vendas DESC -->
             <transition-group name="flip-list" tag="ul" id="lista">
             </transition-group>
@@ -28,10 +29,6 @@
         </div>
     </div>
 
-<div class="colunaTwo">
-    <transition-group name="flip-list" tag="ul" id="colunaTwo">
-    </transition-group>
-</div>
 
 <div class="bt"></div>
 
@@ -42,9 +39,5 @@
             </audio>
         </div-->
     <script src="ajax.js"></script>
-    <script type="text/javascript">
-        function atualiza() { comeca(); }
-        function tocamp3() { busca_mp3(); }
-    </script>
 </body>
 </html>
