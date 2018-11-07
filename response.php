@@ -37,37 +37,20 @@
             </audio>
         </div-->
         
-<?php
-    $json           = file_get_contents('dados.json');
-    $jsonDecode     = (json_decode($json, true));
-
-    if(broken($jsonDecode)) { $err; } else {
-        print_r($jsonDecode);
-    }
-?>
-
 <script type="text/javascript">
 //Código Vue para reatividade
 new Vue({
   el: '#flip-list',
   data: {
-    //bancodedados: []
-    items: banco[]
-
+    url: 'http://localhost/televenda/dados.json',
+    items: [1,2,3,4,5,6,7,8,9]
   },
   methods: {
     shuffle: function () {
-      this.items = _.shuffle(this.item)
+      this.items = _.shuffle(this.items)
     }
   }
 })
-//Ajax TimeOut
-    $.ajax({
-        url:"get.php",
-           success: function (textStatus){
-             $('#pai').html(list.textStatus[ref:id->order('qnt_vendas','DESC')]); //mostrando listagem por vendas
-         }
-     })
 </script>
 </body>
 </html>

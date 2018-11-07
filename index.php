@@ -9,11 +9,7 @@
         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
         <link rel="stylesheet" href="e.css">
 <body>
-<div class="tp">
-    <span class="contTp">
-        <?php echo $meta; ?>
-    </span>
-</div>
+<div class="tp"></div>
 <?php
     $meta   = 300;
     require "conn.php";
