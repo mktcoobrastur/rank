@@ -9,14 +9,17 @@
         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
         <link rel="stylesheet" href="e.css">
 <body>
-<div class="tp"></div>
+<div class="tp">
+    <span class="contTp">
+        <?php echo $meta; ?>
+    </span>
+</div>
 <?php
     $meta   = 300;
     require "conn.php";
     $consulta = mysqli_query($con, "SELECT COUNT(qnt_vendas) FROM atendentes");
     $query = mysqli_fetch_array($consulta);
     $totalVendas = $query[0];
-    
 ?>
 
 <div class="logoCobrastur">

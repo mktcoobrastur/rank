@@ -32,6 +32,10 @@
         </div>
     </div>
 
+<?php
+    $json           = file_get_contents('dados.json');
+    $jsonDecode     = (json_decode($json, true));
+?>
 
 <div class="bt"></div>
 

@@ -28,6 +28,8 @@
                 </div>
         </div>
 
+        <div id="pai"></div>
+
         <!--div class="player">
             <audio autoplay="autoplay">
                 <source src="javascript:tocamp3();" type="audio/mp3" />
@@ -36,41 +38,36 @@
         </div-->
         
 <?php
-
     $json           = file_get_contents('dados.json');
     $jsonDecode     = (json_decode($json, true));
-    print_r($jsonDecode);
+
+    if(broken($jsonDecode)) { $err; } else {
+        print_r($jsonDecode);
+    }
 ?>
+
 <script type="text/javascript">
+//Código Vue para reatividade
 new Vue({
   el: '#flip-list',
   data: {
     //bancodedados: []
-    items: ['Pessoa 1',
-            'Pessoa 2',
-            'Pessoa 3',
-            'Pessoa 4',
-            'Pessoa 3',
-            'Pessoa 5',
-            'Pessoa 6',
-            'Pessoa 7',
-            'Pessoa 8',
-            'Pessoa 9']
+    items: banco[]
 
   },
   methods: {
     shuffle: function () {
-      this.items = _.shuffle(this.items)
+      this.items = _.shuffle(this.item)
     }
-  },
-  created: function() {
-    var self = this;
-    self.$http.get('dados.json').then(function(response) {
-      self.bancodedados = response.body;
-    });
-  },
-
+  }
 })
+//Ajax TimeOut
+    $.ajax({
+        url:"get.php",
+           success: function (textStatus){
+             $('#pai').html(list.textStatus[ref:id->order('qnt_vendas','DESC')]); //mostrando listagem por vendas
+         }
+     })
 </script>
 </body>
 </html>

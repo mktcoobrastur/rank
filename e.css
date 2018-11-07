@@ -10,6 +10,18 @@ body {
     background: #004E78;
     opacity: 0.9;
 }
+
+.tp {
+    height: 20px !important;
+}
+
+.contTp {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+
 .bt {
     position: fixed;
     bottom: 0;
