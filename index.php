@@ -42,7 +42,6 @@
 
     <div class="auto">
         <div class="outLista" id="flip-list">
-            <button v-on:click="shuffle">Refresh</button>
             <!-- DADOS LISTAGEM ORDER BY qnt_vendas DESC -->
             <transition-group name="flip-list" tag="ul" id="lista">
             </transition-group>
@@ -63,6 +62,7 @@
                 seu navegador não suporta HTML5
             </audio>
         </div-->
+
     <script src="ajax.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script></head>
 <script>

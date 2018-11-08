@@ -61,7 +61,7 @@ body {
 
 .linha {
     float: left;
-    width: 550px;
+    width: 480px;
     height: 60px;
     line-height: 45px;
     padding-left: 15px;
@@ -110,8 +110,8 @@ body {
 
 .campeao {
     position: absolute;
-    right: 150px;
-    top: 70px;
+    right: 50px;
+    top: 0px;
     width: 400px;
     height: 279px;
     background-image: url(img/1o.png);
