@@ -13,19 +13,35 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <body>
 <div class="tp"></div>
-<?php
-    $metaTotal = 550;
-    require "conn.php";
-    $consulta = mysqli_query($con, "SELECT (SUM(qnt_vendas)) AS total FROM atendentes");
-    $query = mysqli_fetch_array($consulta);
-    $totalVendas = $query['total'];
-?>
+<div class="spc"></div>
+<div class="conteudoI">
+    <div class="infoGeraisI">
 
-<div class="logoCobrastur">
-    <img src="img/logo-coobrastur.png" />
+    </div>
+
+    <div class="infoBlocoI">
+
+    </div>
+
 </div>
 
+<div id="mime" style="background: #034F77; width: 100%; height: 100%; position: absolute; top: 0;">
 
+    
+
+</div>
+
+<script>
+// O HTML da div precisa estar acima.
+// Esconde a div no início
+var div = document.getElementById('mime');
+div.style.display = 'none';
+
+// Mostra a div após 1 minuto
+setTimeout(function() {
+    $( "#mime" ).delay( 100 ).fadeIn( 400 );
+}, 6000  );
+</script>
 
 <div class="bt"></div>
 </body>

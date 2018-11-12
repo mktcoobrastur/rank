@@ -338,3 +338,26 @@ body {
       width: 100%;
       bottom: 0;
   }
+
+  /********** INDICE **********/
+
+  .conteudoI {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .infoGeraisI {
+      width: 100%;
+  }
+
+  .infoBlocoI {
+    width: 100%;
+  }
+
+  .mime {
+      width: 1000px;
+      height: 1000px;
+      display: block;
+      background: #165C82 !important;
+      position: absolute;
+  }

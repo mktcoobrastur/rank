@@ -36,9 +36,12 @@
 </form>
 <span id="copy">Desenvolvido por Marketing Coobrastur</span>
 <script type="text/javascript">
-jQuery('#usuarios').function myFunction() {
-    $('#token').fadeIn(2500);
-}
+// O HTML da div precisa estar acima.
+// Esconde a div no início
+var div = document.getElementById('mime');
+div.style.display = 'none';
+
 </script>
+
 </body>
 </html>
