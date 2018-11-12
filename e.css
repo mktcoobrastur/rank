@@ -151,7 +151,7 @@ body {
       transform: translateY(0px);
     }
     to {
-      transform: translateY(-10px);
+      transform: translateY(10px);
     }
   }
   @-webkit-keyframes bounce {
@@ -196,18 +196,22 @@ body {
   .rankingTitulo:hover { transition: 0.7s infinite; }
   @keyframes bounce {
     from {
-      transform: translateY(15px);
+      transform: translateY(5px);
     }
     to {
-      transform: translateY(0px);
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
     }
   }
   @-webkit-keyframes bounce {
     from {
-      transform: translateY(15px);
+        transform: translateY(5px);
     }
     to {
-      transform: translateY(0px);
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
     }
   }
   /***** Fim Transitions Ranking *****/
@@ -227,3 +231,100 @@ body {
     animation: opacity 0.5s infinite alternate;
     -webkit-animation: opacity 0.5s infinite alternate;
 }
+
+/***** USERS *****/
+
+.bUsers {
+    background: #154F74;
+}
+
+.topoUsers {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.loginUsers {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.loginUsers img {
+    margin-bottom: 25px;
+}
+
+.spc {
+    width: 100%;
+    height: 30px;
+}
+
+.conteudoUsers {
+    color: #ffffff;
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid #999;
+    background: #f0f0f0;
+    box-shadow: 2px 2px 7px 1px #444;
+}
+
+.quadroUsers {
+    display: block;
+    width: 100px;
+    float: left;
+}
+
+.nan {
+    float: left;
+}
+
+.nomeUser {
+    display: block;
+    position: absolute;
+    color: #fff;
+    font-family: 'Open Sans';
+    line-height: 40px;
+    top: 10px;
+    left: 10px;
+}
+
+.mensagem {
+    width: 85%;
+    margin-left: -16px;
+    margin-top: -15px;
+    height: 105px;
+    background: #81C3A8;
+    position: absolute;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    line-height: 60px;
+}
+
+.sair {
+    color: #f9f9f9;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+.sair:hover { color: #ccc; text-decoration: none; }
+
+#lgUser {
+    animation: animUser 0.5s infinite alternate;
+    -webkit-animation: animUser 0.5s infinite alternate;
+  }
+  @keyframes animUser {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(10px);
+    }
+  }
+  @-webkit-keyframes animUser {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
