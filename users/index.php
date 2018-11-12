@@ -6,16 +6,15 @@
         <!-- Bootstrap 3.3.7 -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="../e.css">
-<body class="bUsers">
-
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"><body class="bUsers">
+<body>
 <div class="topoUsers"></div>
 <form action="users.php" method="post">
 <div class="loginUsers">
     <label><img id="lgUser" src="i/helpdesk.png" alt="Televenda Coobrastur" /></label>
     <div class="form-group">
-
-            <select name="users" class="form-control" id="usuarios" onchange="myFunction()">
-                <option>Identifique-se</option>
+                <select name="users" class="form-control" id="usuarios" onchange="javascript:document.getElementById('entrar').style.display = 'block';">
+                <option> Identifique-se</option>
                 <?php
                     require "../../televenda/conn.php";
                     $consulta = mysqli_query($con, "SELECT * FROM atendentes ORDER BY nome ASC");
@@ -30,18 +29,12 @@
                 ?>
             </select>
                 <input type="password" name="token" style="display: none;" placeholder="Digite o token" id="token" class="form-control">
-            <input type="submit" name="submit" value="Entrar" class="form-control btn btn-primary">
+            <input type="submit" name="submit" value="Entrar" class="form-control btn btn-primary" style="display: none;" id="entrar">
     </div>
-</div>
+</div><i class="fa fa-shield" aria-hidden="false"></i>
 </form>
-<span id="copy">Desenvolvido por Marketing Coobrastur</span>
-<script type="text/javascript">
-// O HTML da div precisa estar acima.
-// Esconde a div no início
-var div = document.getElementById('mime');
-div.style.display = 'none';
 
-</script>
+<span id="copy">Desenvolvido por Marketing Coobrastur</span>
 
 </body>
 </html>

@@ -8,9 +8,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
         <link rel="stylesheet" href="e.css">
-        <!--### FLIP LIST ###-->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <body>
 <div class="tp"></div>
 <?php

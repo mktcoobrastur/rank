@@ -263,8 +263,9 @@ body {
     width: 85%;
     margin: 0 auto;
     padding: 15px;
-    border: 1px solid #999;
+    border-left: 5px solid #043A57;
     background: #f0f0f0;
+    margin-top: 20px;
     box-shadow: 2px 2px 7px 1px #444;
 }
 
@@ -289,10 +290,10 @@ body {
 }
 
 .mensagem {
-    width: 85%;
-    margin-left: -16px;
+    width: 84%;
+    margin-left: -15px;
     margin-top: -15px;
-    height: 105px;
+    height: 100px;
     background: #81C3A8;
     position: absolute;
     font-family: 'Open Sans';
@@ -344,20 +345,22 @@ body {
   .conteudoI {
     margin: 0 auto;
     width: 80%;
+    opacity: 0.7;
   }
 
   .infoGeraisI {
-      width: 100%;
-  }
+      float: left;
+      width: 50%;
+    }
 
   .infoBlocoI {
-    width: 100%;
-  }
+    float: left;
+    width:48%;
+    margin-left: 1%;
+    background: #ffffff;
+    box-shadow: 2px 2px 15px #555;
+    }
 
-  .mime {
-      width: 1000px;
-      height: 1000px;
-      display: block;
-      background: #165C82 !important;
-      position: absolute;
-  }
+    #chBx:hover {
+        background: blue !important;
+    }
