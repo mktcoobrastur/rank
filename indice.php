@@ -175,7 +175,7 @@
 </div>
 <script language=javascript type="text/javascript">
 function newPopup(){
-varWindow = window.open ('http://localhost/televenda/users/', 'popup', "width=500, height=340, right=100, bottom=100, scrollbars=no ")
+varWindow = window.open ('http://localhost/televenda/users/', 'popup', "width=500, height=300, right=100, bottom=100, scrollbars=no ")
 }
 </script>
 <a href="javascript:newPopup()">Abrir popup</a>

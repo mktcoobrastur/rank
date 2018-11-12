@@ -1,6 +1,6 @@
 <?php
-    if(isset($_POST['submit'])) {
-        $user =     $_POST['users'];
+    if(isset($_GET['c'])) {
+        $user =     $_GET['c'];
     }
 ?>
 <!DOCTYPE html>
@@ -17,8 +17,12 @@
 <div class="topoUsers">
                 <?php
                     require "../../televenda/conn.php";
+                    // CONSULTA ATENDENTE LOGADO
                     $consulta = mysqli_query($con, "SELECT * FROM atendentes WHERE id = $user");
                     $l = mysqli_fetch_array($consulta);
+                    // CONSULTA EQUIPE
+                    $consulta = mysqli_query($con, "SELECT SUM(qnt_vendas) FROM atendentes");
+                    $totalEquipe = mysqli_num_rows($consulta);
                 ?>
     <img width="50" id="lgUser" src="i/helpdesk.png" alt="Televenda" class="" style="opacity: 0.7; margin-top: 10px;" />
     <span class="nomeUser">
@@ -27,39 +31,24 @@
     </span>
 </div>
 
-        <a class="sair hidden" href="/televenda/users/vendas.php?c=<?php echo $l['id']; ?>" style="margin-right: 35px;">Minhas Vendas</a>
+        <a class="sair" href="/televenda/users" style="margin-right: 35px;">Voltar</a>
         <a class="sair" href="/televenda/users">Sair</a>
 
         <div class="spc"></div>
-<div class="conteudoUsers">
-    <div class="mensagem" style="display: none;">
-        <span style="width: 100%; display: block; height: 35px;"><img src="i/success.png" alt="Televenda Coobrastur" /></span>
-        <span>Venda informada ao sistema.</span>
+
+<div class="conteudoUsers" style="color: #000;">
+    <div class="boxResultado">
+        <label>Minhas Vendas:</label> <br />
+        <span class="badge"><?php echo $l['qnt_vendas']; ?></span>
     </div>
-    &nbsp;
-    <form action="" method="post" id="ajax_form">
-        <div class="form-group">
-            <span class="quadroUsers">
-                <input type="number" class="form-control nan" value="1" name="qnt" min="0" max="10">
-            </span>
-            <span class="quadroUsers">
-            <select name="plano" class="form-control nan" style="font-size: 10px;">
-                    <option value="1">DIAMANTE</option>
-                    <option value="2">GOLD</option>
-                    <option value="3">CONVENCIONAL</option>
-            </select>
-            </span>
-            <span class="quadroUsers" style="width: 60px; line-height: 40px; text-align: center;">
-                <input type="checkbox" title="Marque para continuar!" class="form-control" id="chBx" style="margin-top: -0px;" required>
-            </span>
-            <span class="quadroUsers" style="">
-                <input type="hidden" value="<?php echo $l['id']; ?>" name="user">
-                <input type="submit" name="cadastrar" value="Cadastrar" class="forn-control btn btn-primary">
-            </span>
-            <div style="clear: both;"></div>
-        </div>
-    </form>
+
+    <div class="boxResultado">
+        <label>Total Equipe:</label> <br />
+        <span class="badge"><?php echo $totalEquipe; ?></span>
+    </div>
+    <div style="clear: both;"></div>
 </div>
+
 <span id="copy">Desenvolvido por Marketing Coobrastur</span>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript">

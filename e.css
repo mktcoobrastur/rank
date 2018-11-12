@@ -304,6 +304,7 @@ body {
 .sair {
     color: #f9f9f9;
     position: absolute;
+    font-size: 10px;
     right: 8px;
     top: 8px;
 }
@@ -361,6 +362,7 @@ body {
     box-shadow: 2px 2px 15px #555;
     }
 
-    #chBx:hover {
-        background: blue !important;
-    }
+.boxResultado {
+    float: left;
+    width: 49%;
+}
