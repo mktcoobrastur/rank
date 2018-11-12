@@ -14,10 +14,11 @@
     <label><img id="lgUser" src="i/helpdesk.png" alt="Televenda Coobrastur" /></label>
     <div class="form-group">
 
-            <select name="users" class="form-control">
+            <select name="users" class="form-control" id="usuarios" onchange="myFunction()">
+                <option>Identifique-se</option>
                 <?php
                     require "../../televenda/conn.php";
-                    $consulta = mysqli_query($con, "SELECT * FROM atendentes");
+                    $consulta = mysqli_query($con, "SELECT * FROM atendentes ORDER BY nome ASC");
                 
                     while ($l = mysqli_fetch_array($consulta)) {
                 ?>
@@ -28,9 +29,16 @@
                     }
                 ?>
             </select>
+                <input type="password" name="token" style="display: none;" placeholder="Digite o token" id="token" class="form-control">
             <input type="submit" name="submit" value="Entrar" class="form-control btn btn-primary">
     </div>
 </div>
 </form>
+<span id="copy">Desenvolvido por Marketing Coobrastur</span>
+<script type="text/javascript">
+jQuery('#usuarios').function myFunction() {
+    $('#token').fadeIn(2500);
+}
+</script>
 </body>
 </html>

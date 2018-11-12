@@ -328,3 +328,13 @@ body {
       transform: translateY(-10px);
     }
   }
+
+  #copy {
+      display: block;
+      position: absolute;
+      color: #888 !important;
+      font-family: 'Open Sans';
+      font-size: 10px;
+      width: 100%;
+      bottom: 0;
+  }

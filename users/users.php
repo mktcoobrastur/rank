@@ -57,6 +57,7 @@
         </div>
     </form>
 </div>
+<span id="copy">Desenvolvido por Marketing Coobrastur</span>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript">
 	jQuery(document).ready(function(){
@@ -81,6 +82,5 @@
 		});
 	});
     </script>
-    <div style="clear: both;"></div>
 </body>
 </html>
