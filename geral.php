@@ -20,6 +20,6 @@
 ?>
 
 <form action="geral.php" method="post">
-  <input type="text" name="mes">
+  <input type="date" name="mes">
   <input type="submit" name="submit" value="Ir">
 </form>

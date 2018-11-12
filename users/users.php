@@ -17,6 +17,13 @@
 <div class="topoUsers">
                 <?php
                     require "../../televenda/conn.php";
+                    $consultaData = mysqli_query($con, "SELECT * FROM vendasdia where 
+                                                        year(created_at) = 2018 and 
+                                                        month(created_at) = 11");
+                    while($rows = mysqli_fetch_array($consultaData)) {
+                        echo "<li>".$rows['atendente']."</li>";
+                    }
+
                     $consulta = mysqli_query($con, "SELECT * FROM atendentes WHERE id = $user");
                     $l = mysqli_fetch_array($consulta);
                 ?>
